@@ -1,0 +1,14 @@
+#Even Fibonacci Numbers
+my $a = 0;
+my $b = 1;
+my $p = 0;
+my $sum = 0;
+while($a<4000000){
+if($a%2==0){
+$sum+=$a;
+}
+$p = $a;
+$a += $b;
+$b=$p;
+}
+print $sum;
