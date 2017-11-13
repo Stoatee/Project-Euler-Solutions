@@ -1,0 +1,16 @@
+#Multiples of 3 and 5
+$a = 0;
+$run = 0;
+$sum = 0;
+while($a<1000){
+if($a%3==0){
+$sum+=$a;
+$run = 1;
+}
+if($a%5==0&&$run == 0){
+$sum+=$a;
+}
+$a++;
+$run = 0;
+}
+print $sum;
